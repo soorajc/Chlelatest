@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1080487048763",
+    "project_id": "chlelatest",
+    "storage_bucket": "chlelatest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080487048763:android:3ccce9cafab87634bace1e",
+        "android_client_info": {
+          "package_name": "com.chlelatest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080487048763-b45g79iqri56virb3sa1katt0kag5tjn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chlelatest",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1080487048763-bhouit201rc0l52hra8gnv854dspovbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSBjTy5f0rhk_GFETj2rANrRJ2I1NYj9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080487048763-bhouit201rc0l52hra8gnv854dspovbs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1080487048763-uk7bomdhlerp2eqdq4ancjrcdbio4n9v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.chlelatest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
