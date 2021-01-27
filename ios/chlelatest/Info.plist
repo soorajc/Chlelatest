@@ -39,6 +39,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>To insert the photo the app needs access to the Photo Library </string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Quicksand-Bold.ttf</string>
