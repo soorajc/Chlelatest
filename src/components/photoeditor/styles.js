@@ -4,7 +4,7 @@ const {height} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: '#363640',
     alignItems: 'center',
     flex: 1,
   },
@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
     marginTop: height * 0.05,
     textAlign: 'center',
     fontFamily: 'Quicksand-Bold',
-    color: '#8B97ED',
-    fontSize: height * 0.034,
+    color: 'white',
+    fontSize: height * 0.038,
     textDecorationLine: 'underline',
   },
 });

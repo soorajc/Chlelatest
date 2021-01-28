@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     width: height * 0.4,
     height: height * 0.4,
     padding: Platform.OS === 'ios' ? '10%' : '8%',
-    backgroundColor: 'black',
+    backgroundColor: '#363640',
     alignSelf: 'center',
     marginTop: height * 0.02,
   },

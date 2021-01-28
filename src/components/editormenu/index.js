@@ -29,8 +29,8 @@ const EditorMenu = (props) => {
             minimumValue={0}
             maximumValue={1}
             value={1}
-            minimumTrackTintColor="#ED672F"
-            maximumTrackTintColor="#000000"
+            minimumTrackTintColor="#778af7"
+            maximumTrackTintColor="#d5d5d7"
             onValueChange={(value) =>
               props.handleEditorConfig(value, 'opacity')
             }
@@ -47,8 +47,8 @@ const EditorMenu = (props) => {
             minimumValue={0}
             maximumValue={1}
             value={1}
-            minimumTrackTintColor="#ED672F"
-            maximumTrackTintColor="#000000"
+            minimumTrackTintColor="#778af7"
+            maximumTrackTintColor="#d5d5d7"
             onValueChange={(value) => props.handleEditorConfig(value, 'scale')}
           />
         </View>
@@ -64,7 +64,7 @@ const EditorMenu = (props) => {
               style={Styles.roundButton}
               labelStyle={Styles.buttonLabel}
               label={item}
-              backgroundColor="#16EDBF"
+              backgroundColor="#778af7"
               handlePress={() => props.handleEditorConfig(item, '')}
             />
           ))}

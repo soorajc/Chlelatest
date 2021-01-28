@@ -86,7 +86,7 @@ const PhotoEditor = () => {
       />
       <Button
         label="Select Photo"
-        backgroundColor="#100E0F"
+        backgroundColor="#ee5361"
         handlePress={handlePhotoInsertion}
       />
       <EditorMenu handleEditorConfig={handleEditorConfig} />

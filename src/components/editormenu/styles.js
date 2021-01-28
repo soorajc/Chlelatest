@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
   label: {
     fontFamily: 'Quicksand-Regular',
-    color: '#25151B',
+    color: 'white',
     marginTop: height * 0.01,
     marginBottom: height * 0.01,
     marginRight: width * 0.02,
