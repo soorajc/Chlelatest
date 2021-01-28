@@ -13,6 +13,7 @@
     "@react-native-community/slider": "^3.0.3",
     "@react-native-firebase/app": "^10.5.0",
     "@react-native-firebase/storage": "^10.5.1",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-image-picker": "^3.1.4",

@@ -8,6 +8,8 @@
 
 import React from 'react';
 import {TouchableOpacity, Text} from 'react-native';
+import PropTypes from 'prop-types';
+
 import Styles from './styles';
 
 const Button = (props) => {
@@ -27,3 +29,11 @@ const Button = (props) => {
 };
 
 export default Button;
+
+Button.propTypes = {
+  label: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  style: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
+  labelStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.number]),
+  handlePress: PropTypes.func.isRequired,
+};

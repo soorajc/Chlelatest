@@ -9,6 +9,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import Slider from '@react-native-community/slider';
+import PropTypes from 'prop-types';
 
 import Button from '../button';
 import Styles from './styles';
@@ -74,3 +75,7 @@ const EditorMenu = (props) => {
 };
 
 export default EditorMenu;
+
+EditorMenu.propTypes = {
+  handleEditorConfig: PropTypes.func.isRequired,
+};

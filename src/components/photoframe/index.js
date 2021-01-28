@@ -8,6 +8,8 @@
 
 import React from 'react';
 import {View, ImageBackground, Image} from 'react-native';
+import PropTypes from 'prop-types';
+
 import Styles from './styles';
 import frameBackground from '../../assets/frame.png';
 import placeholderImage from '../../assets/placeholder.png';
@@ -37,3 +39,8 @@ const PhotoFrame = (props) => {
 };
 
 export default PhotoFrame;
+
+PhotoFrame.propTypes = {
+  source: PropTypes.object,
+  photoConfig: PropTypes.object,
+};
