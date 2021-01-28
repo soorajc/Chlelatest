@@ -41,6 +41,6 @@ const PhotoFrame = (props) => {
 export default PhotoFrame;
 
 PhotoFrame.propTypes = {
-  source: PropTypes.object,
+  source: PropTypes.string,
   photoConfig: PropTypes.object,
 };
