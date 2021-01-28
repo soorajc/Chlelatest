@@ -13,6 +13,7 @@ import frameBackground from '../../assets/frame.png';
 import placeholderImage from '../../assets/placeholder.png';
 
 const PhotoFrame = (props) => {
+  const {opacity, scale, rotate} = props.photoConfig;
   return (
     <ImageBackground
       ref={props.frameRef}
@@ -21,7 +22,13 @@ const PhotoFrame = (props) => {
       source={frameBackground}>
       <View style={Styles.photoContainer}>
         <Image
-          style={Styles.photo}
+          style={[
+            Styles.photo,
+            {
+              opacity,
+              transform: [{scale}, {rotate}],
+            },
+          ]}
           source={props.source ? {uri: props.source} : placeholderImage}
         />
       </View>

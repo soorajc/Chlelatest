@@ -14,8 +14,14 @@ const Button = (props) => {
   return (
     <TouchableOpacity
       onPress={() => props.handlePress()}
-      style={[Styles.button, {backgroundColor: props.backgroundColor}]}>
-      <Text style={Styles.buttonLabel}>{props.label}</Text>
+      style={[
+        Styles.button,
+        {backgroundColor: props.backgroundColor},
+        props.style && props.style,
+      ]}>
+      <Text style={[Styles.buttonLabel, props.labelStyle && props.labelStyle]}>
+        {props.label}
+      </Text>
     </TouchableOpacity>
   );
 };
