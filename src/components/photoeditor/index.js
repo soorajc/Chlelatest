@@ -37,21 +37,25 @@ const PhotoEditor = () => {
   };
 
   const handlePhotoUpload = async () => {
-    setLoading(true);
-    const fileName = photoSource.name;
-    const uploadStatus = await photoUpload(photoFrameContainer, fileName);
-    setLoading(false);
-    if (
-      uploadStatus &&
-      uploadStatus.state &&
-      uploadStatus.state !== 'success'
-    ) {
-      Alert.alert(
-        'Message',
-        'Some Error Occured while uploading image. Try Again',
-      );
+    if (photoSource && photoSource.name) {
+      setLoading(true);
+      const fileName = photoSource.name;
+      const uploadStatus = await photoUpload(photoFrameContainer, fileName);
+      setLoading(false);
+      if (
+        uploadStatus &&
+        uploadStatus.state &&
+        uploadStatus.state !== 'success'
+      ) {
+        Alert.alert(
+          'Message',
+          'Some Error Occured while uploading image. Try Again',
+        );
+      } else {
+        Alert.alert('Success', 'Your photo has been submitted successfully');
+      }
     } else {
-      Alert.alert('Success', 'Your photo has been submitted successfully');
+      Alert.alert('Message', 'Please select a photo for uploading');
     }
   };
 
