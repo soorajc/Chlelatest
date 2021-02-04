@@ -23,7 +23,7 @@ const PhotoEditor = () => {
   const [loading, setLoading] = useState(false);
   const [editorConfig, setEditorConfig] = useState({
     opacity: 1,
-    rotate: '0deg',
+    rotate: 0,
     scale: 1,
   });
 
@@ -71,9 +71,11 @@ const PhotoEditor = () => {
         scale: value,
       });
     } else {
+      const currentAngle = editorConfig.rotate;
+      const updatedAngle = currentAngle + value;
       setEditorConfig({
         ...editorConfig,
-        rotate: value,
+        rotate: updatedAngle,
       });
     }
   };

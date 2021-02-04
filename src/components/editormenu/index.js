@@ -14,7 +14,11 @@ import PropTypes from 'prop-types';
 import Button from '../button';
 import Styles from './styles';
 
-const rotationAngles = ['90deg', '-90deg', '180deg'];
+const rotationAngles = [
+  {label: '90 deg', value: 90},
+  {label: '-90 deg', value: -90},
+  {label: '180 deg', value: 180},
+];
 
 const EditorMenu = (props) => {
   return (
@@ -65,9 +69,9 @@ const EditorMenu = (props) => {
               key={index}
               style={Styles.roundButton}
               labelStyle={Styles.buttonLabel}
-              label={item}
+              label={item.label}
               backgroundColor="#778af7"
-              handlePress={() => props.handleEditorConfig(item, '')}
+              handlePress={() => props.handleEditorConfig(item.value, '')}
             />
           ))}
         </View>

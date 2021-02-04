@@ -28,7 +28,7 @@ const PhotoFrame = (props) => {
             Styles.photo,
             {
               opacity,
-              transform: [{scale}, {rotate}],
+              transform: [{scale}, {rotate: rotate.toString() + 'deg'}],
             },
           ]}
           source={props.source ? {uri: props.source} : placeholderImage}
