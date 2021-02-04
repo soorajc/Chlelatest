@@ -31,6 +31,7 @@ const EditorMenu = (props) => {
             value={1}
             minimumTrackTintColor="#778af7"
             maximumTrackTintColor="#d5d5d7"
+            tapToSeek
             onValueChange={(value) =>
               props.handleEditorConfig(value, 'opacity')
             }
@@ -47,6 +48,7 @@ const EditorMenu = (props) => {
             minimumValue={0}
             maximumValue={1}
             value={1}
+            tapToSeek
             minimumTrackTintColor="#778af7"
             maximumTrackTintColor="#d5d5d7"
             onValueChange={(value) => props.handleEditorConfig(value, 'scale')}
