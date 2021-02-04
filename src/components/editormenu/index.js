@@ -39,6 +39,9 @@ const EditorMenu = (props) => {
             onValueChange={(value) =>
               props.handleEditorConfig(value, 'opacity')
             }
+            onSlidingComplete={(value) =>
+              props.handleEditorConfig(value, 'opacity')
+            }
           />
         </View>
       </View>
@@ -55,6 +58,9 @@ const EditorMenu = (props) => {
             tapToSeek
             minimumTrackTintColor="#778af7"
             maximumTrackTintColor="#d5d5d7"
+            onSlidingComplete={(value) =>
+              props.handleEditorConfig(value, 'scale')
+            }
             onValueChange={(value) => props.handleEditorConfig(value, 'scale')}
           />
         </View>
